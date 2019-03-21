@@ -223,34 +223,34 @@
             <xmlOutput>true</xmlOutput>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>2.9.1</version>
-          <configuration>
-            <encoding>UTF-8</encoding>          
-            <configLocation>${checkstyle-config-file}</configLocation>
-            <headerLocation>${checkstyle-header-file}</headerLocation>
-            <suppressionsLocation>${checkstyle-suppressions-file}</suppressionsLocation>
-            <consoleOutput>true</consoleOutput>
-            <logViolationsToConsole>true</logViolationsToConsole>
-            <failsOnError>true</failsOnError>
-            <failOnViolation>true</failOnViolation>
-            <includeTestSourceDirectory>false</includeTestSourceDirectory>
-            <enableRulesSummary>true</enableRulesSummary>
-            <linkXRef>false</linkXRef>
-            <skip>${skipCheckstyle}</skip>
-          </configuration>
-          <executions>
-            <execution>
-              <id>run-checkstyle</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>checkstyle</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
+        <!--<plugin>-->
+          <!--<groupId>org.apache.maven.plugins</groupId>-->
+          <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
+          <!--<version>2.9.1</version>-->
+          <!--<configuration>-->
+            <!--<encoding>UTF-8</encoding>          -->
+            <!--<configLocation>${checkstyle-config-file}</configLocation>-->
+            <!--<headerLocation>${checkstyle-header-file}</headerLocation>-->
+            <!--<suppressionsLocation>${checkstyle-suppressions-file}</suppressionsLocation>-->
+            <!--<consoleOutput>true</consoleOutput>-->
+            <!--<logViolationsToConsole>true</logViolationsToConsole>-->
+            <!--<failsOnError>true</failsOnError>-->
+            <!--<failOnViolation>true</failOnViolation>-->
+            <!--<includeTestSourceDirectory>false</includeTestSourceDirectory>-->
+            <!--<enableRulesSummary>true</enableRulesSummary>-->
+            <!--<linkXRef>false</linkXRef>-->
+            <!--<skip>${skipCheckstyle}</skip>-->
+          <!--</configuration>-->
+          <!--<executions>-->
+            <!--<execution>-->
+              <!--<id>run-checkstyle</id>-->
+              <!--<phase>verify</phase>-->
+              <!--<goals>-->
+                <!--<goal>checkstyle</goal>-->
+              <!--</goals>-->
+            <!--</execution>-->
+          <!--</executions>-->
+        <!--</plugin>-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
